@@ -258,6 +258,49 @@ Changes to be committed:
 
 C:\Users\nemza\Google Drive\www\gitweb>
 </code></pre>
+
+    Création de home.php
+
+    Ajoute de <?= "Hello Git" ?> dans le content.
+
+<pre><code class="language-php line-numbers">C:\Users\nemza\Google Drive\www\gitweb>git add --all
+
+C:\Users\nemza\Google Drive\www\gitweb>git commit --m "Ajout message dans home.php"
+[master 2ce6714] Ajout message dans home.php
+ 5 files changed, 89 insertions(+), 22 deletions(-)
+ create mode 100644 css/grid.css
+ create mode 100644 home.php
+
+        C:\Users\nemza\Google Drive\www\gitweb></code></pre>
+
+    <pre><code class="language-php line-numbers">C:\Users\nemza\Google Drive\www\gitweb>git log
+commit 2ce6714947316e36e6067d096668666ee071a022 (HEAD -> master)
+Author: John Doe <john.doe@email.com>
+Date:   Fri Oct 19 11:35:09 2018 +0200
+
+    Ajout message dans home.php
+
+commit 58dca1ae2de5dbf5a3cbf6f88af44595139fd911
+Author: John Doe <john.doe@email.com>
+Date:   Fri Oct 19 11:18:21 2018 +0200
+
+    Ajout des CSS
+
+commit efb1ac5734caed0614aa5f1288bdd70037e88ffc
+Author: John Doe <john.doe@email.com>
+Date:   Fri Oct 19 10:21:21 2018 +0200
+
+    premier commit projet (files)
+(END)
+</code></pre>
+
+    Vous voulez supprimez le commit ? Attention, vous effacez tout les modifications.
+
+    <pre><code class="language-php line-numbers">git log</code></pre>
+
+    On recupere le cha1
+
+    <pre><code class="language-php line-numbers">git reset 2ce6714947316e36e6067d096668666ee071a022 --hard</code>
 </body>
 </html>
 
