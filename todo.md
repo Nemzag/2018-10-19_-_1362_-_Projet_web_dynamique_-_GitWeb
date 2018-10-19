@@ -17,3 +17,6 @@
 créer un dossier css avec deux fichiers
 créer un fichier admin.php, lire.txt
 Lire.txt ne sera pas indexé commiter la nouvelle version.
+
+On va dans .gitignore et on supprime lire.txt
+On ajoute un nouvelle feuille de style.
